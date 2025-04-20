@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* src/index.css */
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Your CSS variables reset (example) */
+:root {
+  --color-primary: #249ab7;
+  --color-secondary: #ec4899;
+  --color-background: #ffffff;
+  --color-text: #1f2937;
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.react-multiple-carousel__arrow{
+
+  position: absolute;
+  bottom:5%;
+  background-color: red;
+}
+
+.react-multiple-carousel__arrow--left{
+  margin-left:33% !important ;
+
+}
+
+.react-multiple-carousel__arrow--right{
+  margin-right:33% !important ;
+
+}
+/* 
+.react-multi-carousel-dot{
+  width: 100px;
+} */
+/* Base styles that apply to all screen sizes */
+.react-multi-carousel-dot-list {
+  position: absolute;
+  bottom: 7% !important;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.react-multiple-carousel__arrow {
+  z-index: 50 !important;
+  min-width: 30px !important;
+  min-height: 30px !important;
+}
+
+.react-multi-carousel-dot button {
+  width: 30px !important;
+  height: 4px !important;
+  border-radius: 0% !important;
+  border-color: rgb(178, 174, 174) !important;
+  background-color: rgb(178, 174, 174) !important;
+  opacity: 0.8 !important;
+  padding: 1px !important;
+  margin: 0 3px !important;
+}
+
+.react-multi-carousel-dot--active button {
+  background-color: rgb(255, 255, 255) !important;
+  border-color: rgb(255, 255, 255) !important;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .react-multi-carousel-dot-list {
+    bottom: 5% !important;
+  }
+
+  .react-multiple-carousel__arrow {
+    min-width: 25px !important;
+    min-height: 25px !important;
+  }
+
+  .react-multi-carousel-dot button {
+    width: 20px !important;
+    height: 3px !important;
+    margin: 0 2px !important;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .react-multi-carousel-dot-list {
+    bottom: 3% !important;
+  }
+
+  .react-multiple-carousel__arrow {
+    min-width: 20px !important;
+    min-height: 20px !important;
+  }
+
+  .react-multi-carousel-dot button {
+    width: 15px !important;
+    height: 2px !important;
+    margin: 0 1px !important;
+  }
+}
+.bg-primary{
+  background-color: #249ab7;
+}
+
+.bg-primary:hover{
+  background-color: #29abcc;
+}
+
+.color-primary{
+  color:#29abcc;
+}
