@@ -57,21 +57,25 @@ export default function Sidebar() {
 
     }
   };
+  const handleClickWhatsapp = () => {
+    window.open("https://wa.me/919747744111", "_blank");
+  };
+  
 
   return (
     <aside className="fixed  hidden sm:block right-0 top-0 w-80 bg-white shadow-lg h-screen p-4 overflow-y-auto border-l border-gray-200 z-999">
       {/* Top buttons */}
       <div className="flex">
         <button
-          className="flex-1 bg-gray-800 text-white py-2 text-sm"
+          className="flex-1 cursor-pointer hover:bg-gray-700 bg-gray-800 text-white py-2 text-sm"
           onClick={openModal}
         >
           Organize Site Visit
         </button>
         <button
-          className="flex items-center justify-between gap-2 bg-green-600 text-white py-2 text-sm px-2"
-          // onClick={() => handleClick('WhatsApp Now')}
-        >
+          className="flex cursor-pointer hover:bg-green-700 items-center justify-between gap-2 bg-green-600 text-white py-2 text-sm px-2"
+          onClick={handleClickWhatsapp}
+          >
           <FaWhatsapp />
           WhatsApp Now
         </button>
